@@ -1,0 +1,50 @@
+.mobile-th {
+  display:none;
+}
+
+@media (max-width: 760px) {
+
+  table.content-table{
+    width:100%;
+
+    .mobile-th {
+      display:inline-block;
+      margin-right:10px;
+      width: 50%;
+      font-weight: bold;
+    }
+
+    thead {
+      opacity:0;
+      position: fixed;
+      top:-9999px;
+      left:-9999px;
+      height:0;
+      width:0;
+    }
+
+    tbody {
+      float:left;
+      width:100%;
+      display: block;
+      td,tr {
+        width:100%;
+        text-align:left;
+        display: block;
+      }
+    }
+
+    tr {
+      margin-bottom:40px;
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+  }
+}
+
+

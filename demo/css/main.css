@@ -1,0 +1,16 @@
+table.content-table {
+  box-sizing: border-box; }
+  table.content-table td, table.content-table th {
+    padding: 10px 20px;
+    text-align: center;
+    box-sizing: border-box; }
+  table.content-table tbody tr:nth-of-type(odd) {
+    background-color: #e1e1e1; }
+
+@media (max-width: 760px) {
+  table.content-table td:nth-of-type(odd) {
+    background-color: #e1e1e1; }
+  table.content-table tbody tr:nth-of-type(odd) {
+    background: none; } }
+
+/*# sourceMappingURL=main.css.map */

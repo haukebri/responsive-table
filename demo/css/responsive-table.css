@@ -1,0 +1,34 @@
+.mobile-th {
+  display: none; }
+
+@media (max-width: 760px) {
+  table.content-table {
+    width: 100%; }
+    table.content-table .mobile-th {
+      display: inline-block;
+      margin-right: 10px;
+      width: 50%;
+      font-weight: bold; }
+    table.content-table thead {
+      opacity: 0;
+      position: fixed;
+      top: -9999px;
+      left: -9999px;
+      height: 0;
+      width: 0; }
+    table.content-table tbody {
+      float: left;
+      width: 100%;
+      display: block; }
+      table.content-table tbody td, table.content-table tbody tr {
+        width: 100%;
+        text-align: left;
+        display: block; }
+    table.content-table tr {
+      margin-bottom: 40px; }
+    table.content-table:after {
+      content: "";
+      display: table;
+      clear: both; } }
+
+/*# sourceMappingURL=responsive-table.css.map */
