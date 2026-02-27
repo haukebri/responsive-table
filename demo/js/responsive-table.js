@@ -3,20 +3,15 @@ $(document).ready(function(){
 });
 
 function responsiveTable() {
-    var nth = 1;
-    $(".content-table td").each(function(){
-        var that  = $(this);
-        var table = that.closest('table');
-        var headContent = table.find("th:nth-child("+nth+")").html();
-        var maxNth = table.find("th").length;
+    $("table.content-table").each(function(){
+        var table = $(this);
+        var headers = table.find("thead th");
 
-        that.prepend('<span class="mobile-th">' + headContent + "</span>");
-
-        // count th's
-        if (nth == maxNth) {
-            nth = 1;
-        } else {
-            nth++;
-        }
+        table.find("tbody td").each(function(index){
+            var colIndex = index % headers.length;
+            var headerText = headers.eq(colIndex).text();
+            var span = $("<span>", { "class": "mobile-th", text: headerText });
+            $(this).prepend(span);
+        });
     });
 }
