@@ -3,6 +3,8 @@ Table responsive maker for jQuery (Discontinued)
 
 > **This project is discontinued and no longer maintained.**
 
+> **Note:** This README was updated as part of test-02.
+
 Displaying tables responsive is no fun. They either get messed up or they mess up your layout. There are some approaches which let you scroll through the table but it does not feel good on a phone.
 
 I've found a css way to make responsive Tables at css-tricks.com (https://css-tricks.com/responsive-data-tables/) but in that solution you need to know the content of the table beforehand. Which isn't the case in most cases.
