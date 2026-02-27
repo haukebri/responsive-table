@@ -1,17 +1,12 @@
-Table responsive maker for jQuery (Discontinued)
-==================================================
+Responsive Table — Test Repository
+====================================
 
-> **This project is discontinued and no longer maintained.**
+This repository is used as a test target for automated workflow validation.
 
-Displaying tables responsive is no fun. They either get messed up or they mess up your layout. There are some approaches which let you scroll through the table but it does not feel good on a phone.
+## About
 
-I've found a css way to make responsive Tables at css-tricks.com (https://css-tricks.com/responsive-data-tables/) but in that solution you need to know the content of the table beforehand. Which isn't the case in most cases.
+Originally a jQuery plugin for making HTML tables responsive (based on a technique from [css-tricks.com](https://css-tricks.com/responsive-data-tables/)). Now repurposed as a lightweight test repository.
 
-How to use
------------
-You will need a table with <thead> and <tbody> to make it work.
-Take a look at the demo.
+## Structure
 
-**JS:** This is just a function. Call it once the dom is ready.
-
-**CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there. 
+- `demo/` — Contains a sample HTML page with CSS and JS demonstrating responsive tables. 
