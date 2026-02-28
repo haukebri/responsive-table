@@ -1,7 +1,5 @@
-Table responsive maker for jQuery (Discontinued)
-==================================================
-
-> **This project is discontinued and no longer maintained.**
+Table responsive maker for jQuery
+=================================
 
 Displaying tables responsive is no fun. They either get messed up or they mess up your layout. There are some approaches which let you scroll through the table but it does not feel good on a phone.
 
