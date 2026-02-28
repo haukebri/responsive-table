@@ -12,4 +12,14 @@ Take a look at the demo.
 
 **JS:** This is just a function. Call it once the dom is ready.
 
-**CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there. 
+**CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
+
+Alternatives
+------------
+Since this project is no longer maintained, here are some actively developed or widely used alternatives:
+
+- [Tablesaw](https://github.com/filamentgroup/tablesaw) — A group of plugins for responsive tables with stack, swipe, and column toggle modes. Vanilla JS (jQuery optional).
+- [FooTable](https://github.com/fooplugins/FooTable) — jQuery plugin that hides columns on small screens and reveals them in expandable detail rows.
+- [Stacktable.js](https://github.com/johnpolacek/stacktable.js) — Lightweight jQuery plugin that creates a stacked copy of a wide table for small screens.
+- [RWD-Table-Patterns](https://github.com/nadangergeo/RWD-Table-Patterns) — Implements several responsive table patterns including scrollable, flip-scroll, and stacked layouts. jQuery + CSS.
+- [Responsive Tables](https://github.com/zurb/responsive-tables) — CSS + jQuery approach from the Zurb team that adds horizontal scrolling with a sticky first column.
