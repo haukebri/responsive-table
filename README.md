@@ -23,4 +23,6 @@ Take a look at the demo.
 
 **Svelte:** A `<ResponsiveTable>` component using Svelte's template syntax (`{#each}`) for clean, reactive rendering. The demo compiles the `.svelte` file in the browser using Svelte's compiler from CDN. See `demo/svelte/`.
 
+**Angular:** A `<responsive-table>` component using Angular's `*ngFor` directive for template-driven rendering. Uses Angular 17 UMD bundles from CDN with no build step required. See `demo/angular/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
