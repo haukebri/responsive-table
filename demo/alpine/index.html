@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive Table — Alpine.js</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/responsive-table.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
+</head>
+<body>
+
+<div x-data="responsiveTable">
+    <table class="content-table">
+        <thead>
+        <tr>
+            <template x-for="(header, i) in headers" :key="i">
+                <th x-text="header"></th>
+            </template>
+        </tr>
+        </thead>
+        <tbody>
+        <template x-for="(row, rowIndex) in rows" :key="rowIndex">
+            <tr>
+                <template x-for="(cell, colIndex) in row" :key="colIndex">
+                    <td>
+                        <span class="mobile-th" x-text="headers[colIndex]"></span>
+                        <span x-text="cell"></span>
+                    </td>
+                </template>
+            </tr>
+        </template>
+        </tbody>
+    </table>
+</div>
+
+<script src="responsive-table.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3/dist/cdn.min.js"></script>
+</body>
+</html>
