@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive Table — Vue</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/responsive-table.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
+</head>
+<body>
+
+<div id="app">
+    <responsive-table :headers="headers" :rows="rows"></responsive-table>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+<script src="ResponsiveTable.js"></script>
+<script>
+    const { createApp } = Vue;
+
+    createApp({
+        components: { ResponsiveTable },
+        data() {
+            return {
+                headers: ["table head 1", "head 2", "head 3", "head 4", "head 5"],
+                rows: [
+                    ["content 1 1", "content 1 2", "content 1 3", "content 1 4", "content 1 5"],
+                    ["content 2 1", "content 2 2", "content 2 3", "content 2 4", "content 2 5"],
+                    ["content 2 1", "content 2 2", "content 2 3", "content 2 4", "content 2 5"],
+                    ["content 3 1", "content 3 2", "content 3 3", "content 3 4", "content 3 5"],
+                    ["content 4 1", "content 4 2", "content 4 3", "content 4 4", "content 4 5"],
+                ],
+            };
+        },
+    }).mount("#app");
+</script>
+</body>
+</html>
