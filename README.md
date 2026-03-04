@@ -17,4 +17,6 @@ Take a look at the demo.
 
 **React:** A `<ResponsiveTable>` component that accepts `headers` and `rows` props. Each cell automatically gets a mobile label from its column header — no DOM manipulation needed. See `demo/react/`.
 
+**Vue:** A `<responsive-table>` component with the same `headers` and `rows` props. Uses Vue 3 with no build step required. See `demo/vue/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
