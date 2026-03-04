@@ -19,4 +19,6 @@ Take a look at the demo.
 
 **Vue:** A `<responsive-table>` component with the same `headers` and `rows` props. Uses Vue 3 with no build step required. See `demo/vue/`.
 
+**Alpine.js:** A lightweight `x-data` component using Alpine.js directives (`x-for`, `x-text`) to render the table declaratively in HTML. No build step required. See `demo/alpine/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
