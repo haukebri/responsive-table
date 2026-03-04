@@ -1,3 +1,4 @@
+<!-- This file is managed by claude-kanban-flow -->
 Table responsive maker for jQuery
 =================================
 
