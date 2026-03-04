@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * ResponsiveTable — A React component that makes HTML tables responsive.
  *
@@ -38,5 +36,3 @@ function ResponsiveTable({ headers, rows, className = "content-table" }) {
     </table>
   );
 }
-
-export default ResponsiveTable;
