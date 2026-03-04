@@ -15,4 +15,6 @@ Take a look at the demo.
 
 **jQuery:** This is just a function. Call it once the dom is ready.
 
+**React:** A `<ResponsiveTable>` component that accepts `headers` and `rows` props. Each cell automatically gets a mobile label from its column header — no DOM manipulation needed. See `demo/react/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
