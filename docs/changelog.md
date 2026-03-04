@@ -1,5 +1,13 @@
 # Changelog
 
+## stream-test-2
+
+- Added `<!-- This file is managed by claude-kanban-flow -->` comment to top of README.md
+
+## docs-reviews-mmanc8ju
+
+- Added changelog entry for docs-reviews-mmakn9pn commit
+
 ## docs-reviews-mmakn9pn
 
 - Reviewed git history and populated changelog with entries for all prior commits (feedbacktest2, feebacktest1, girlfriend-showcase-1, testticket232323, test-doc-12311, test-1)
