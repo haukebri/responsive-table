@@ -21,4 +21,6 @@ Take a look at the demo.
 
 **Alpine.js:** A lightweight `x-data` component using Alpine.js directives (`x-for`, `x-text`) to render the table declaratively in HTML. No build step required. See `demo/alpine/`.
 
+**Svelte:** A `<ResponsiveTable>` component using Svelte's template syntax (`{#each}`) for clean, reactive rendering. The demo compiles the `.svelte` file in the browser using Svelte's compiler from CDN. See `demo/svelte/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.

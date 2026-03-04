@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive Table — Svelte</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/responsive-table.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
+</head>
+<body>
+
+<div id="app"></div>
+
+<script type="module">
+    import { compile } from "https://unpkg.com/svelte@4/compiler/index.mjs";
+
+    const svelteSource = await fetch("ResponsiveTable.svelte").then(r => r.text());
+
+    const { js } = compile(svelteSource, {
+        format: "esm",
+        generate: "dom",
+        sveltePath: "https://unpkg.com/svelte@4",
+    });
+
+    const blob = new Blob([js.code], { type: "application/javascript" });
+    const url = URL.createObjectURL(blob);
+    const { default: ResponsiveTable } = await import(url);
+    URL.revokeObjectURL(url);
+
+    new ResponsiveTable({
+        target: document.getElementById("app"),
+        props: {
+            headers: ["table head 1", "head 2", "head 3", "head 4", "head 5"],
+            rows: [
+                ["content 1 1", "content 1 2", "content 1 3", "content 1 4", "content 1 5"],
+                ["content 2 1", "content 2 2", "content 2 3", "content 2 4", "content 2 5"],
+                ["content 2 1", "content 2 2", "content 2 3", "content 2 4", "content 2 5"],
+                ["content 3 1", "content 3 2", "content 3 3", "content 3 4", "content 3 5"],
+                ["content 4 1", "content 4 2", "content 4 3", "content 4 4", "content 4 5"],
+            ],
+        },
+    });
+</script>
+</body>
+</html>
