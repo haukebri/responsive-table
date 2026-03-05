@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive Table — htmx</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/responsive-table.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
+</head>
+<body>
+
+<!--
+    htmx philosophy: the table is server-rendered HTML. The mobile-th spans are
+    injected by responsive-table.js on load and after every htmx swap. This means
+    any endpoint that returns a plain <table> gets responsive behaviour for free.
+
+    The hx-get below demonstrates htmx-driven content swapping. Since this demo
+    has no server, it uses a Blob URL created in the inline script as the endpoint.
+-->
+
+<div id="table-container">
+    <table class="content-table">
+        <thead>
+        <tr>
+            <th>table head 1</th>
+            <th>head 2</th>
+            <th>head 3</th>
+            <th>head 4</th>
+            <th>head 5</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>content 1 1</td>
+            <td>content 1 2</td>
+            <td>content 1 3</td>
+            <td>content 1 4</td>
+            <td>content 1 5</td>
+        </tr>
+        <tr>
+            <td>content 2 1</td>
+            <td>content 2 2</td>
+            <td>content 2 3</td>
+            <td>content 2 4</td>
+            <td>content 2 5</td>
+        </tr>
+        <tr>
+            <td>content 2 1</td>
+            <td>content 2 2</td>
+            <td>content 2 3</td>
+            <td>content 2 4</td>
+            <td>content 2 5</td>
+        </tr>
+        <tr>
+            <td>content 3 1</td>
+            <td>content 3 2</td>
+            <td>content 3 3</td>
+            <td>content 3 4</td>
+            <td>content 3 5</td>
+        </tr>
+        <tr>
+            <td>content 4 1</td>
+            <td>content 4 2</td>
+            <td>content 4 3</td>
+            <td>content 4 4</td>
+            <td>content 4 5</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://unpkg.com/htmx.org@2/dist/htmx.min.js"></script>
+<script src="responsive-table.js"></script>
+</body>
+</html>
