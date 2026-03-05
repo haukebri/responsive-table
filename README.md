@@ -25,4 +25,6 @@ Take a look at the demo.
 
 **Angular:** A standalone `<responsive-table>` component using Angular 17 with `*ngFor` directives for iterative rendering. The demo loads Angular from CDN via import maps and uses JIT compilation — no build step required. Component metadata is defined via static annotations instead of TypeScript decorators. See `demo/angular/`.
 
+**Lit:** A `<responsive-table>` web component built with Lit. Uses standard custom elements with reactive properties (`headers`, `rows`). Shadow DOM is disabled so shared CSS applies directly. The demo loads Lit from CDN via import maps — no build step required. See `demo/lit/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
