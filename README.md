@@ -33,6 +33,8 @@ Take a look at the demo.
 
 **Mithril.js:** A `ResponsiveTable` component using Mithril.js with hyperscript views (`m()` calls instead of JSX or templates). Lightweight (~10kb gzipped), fast virtual DOM, and no build step required — loaded via CDN script tag. See `demo/mithril/`.
 
+**Stimulus:** An HTML-first controller approach using Stimulus (part of Hotwire). The table is plain server-rendered HTML — adding `data-controller="responsive-table"` activates the controller, which reads `<thead>` labels and injects mobile labels into each cell on connect. No build step required. See `demo/stimulus/`.
+
 **htmx:** A progressive enhancement approach using htmx. The table is written as plain server-rendered HTML, and a small script injects mobile labels from `<thead>` on load. The `htmx:afterSwap` event re-processes any table content swapped in by htmx — so server endpoints can return plain `<table>` HTML and get responsive behaviour for free. No build step required. See `demo/htmx/`.
 
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
