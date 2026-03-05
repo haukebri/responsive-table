@@ -11,6 +11,8 @@
  *   rows     — Array of arrays, each inner array is one row of cell values
  *   className — Optional additional class name (default: "content-table")
  */
+import { For } from "solid-js";
+
 function ResponsiveTable(props) {
   const className = () => props.className || "content-table";
 

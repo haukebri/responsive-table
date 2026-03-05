@@ -22,7 +22,8 @@
 <script src="https://cdn.jsdelivr.net/npm/babel-preset-solid@1/dist/babel-preset-solid.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 <script type="text/babel" data-type="module" data-presets="solid">
-    import { render, For } from "solid-js/web";
+    import { render } from "solid-js/web";
+    import { For } from "solid-js";
 
     function ResponsiveTable(props) {
         const className = () => props.className || "content-table";
