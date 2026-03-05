@@ -1,5 +1,45 @@
 # Changelog
 
+## other-js-libs-mmcugtkv
+
+- Added Lit web component demo (`demo/lit/ResponsiveTable.js`, `demo/lit/index.html`)
+- Updated README with Lit section
+
+## other-js-libs-mmcovgw7
+
+- Added Angular standalone component demo (`demo/angular/ResponsiveTable.js`, `demo/angular/index.html`)
+- Updated README with Angular section
+
+## other-js-libs-mmc916gf
+
+- Added Svelte component demo (`demo/svelte/ResponsiveTable.svelte`, `demo/svelte/index.html`)
+- Updated README with Svelte section
+
+## other-js-libs-mmc7yke0
+
+- Added Alpine.js component demo (`demo/alpine/responsive-table.js`, `demo/alpine/index.html`)
+- Updated README with Alpine.js section
+
+## other-js-libs-mmc6vyxt
+
+- Added Vue 3 component demo (`demo/vue/ResponsiveTable.js`, `demo/vue/index.html`)
+- Updated README with Vue section
+
+## other-js-libs-mmc5clnt
+
+- Added React component demo (`demo/react/ResponsiveTable.jsx`, `demo/react/index.html`)
+- Updated README with React section
+
+## mark-query
+
+- Renamed `demo/js/` to `demo/jquery/`
+- Updated `demo/index.html` to reference new jQuery demo path
+- Updated README label from "JS" to "jQuery"
+
+## docs-reviews-mmc3e27h
+
+- Added changelog entries for stream-test-2 and docs-reviews-mmanc8ju commits
+
 ## stream-test-2
 
 - Added `<!-- This file is managed by claude-kanban-flow -->` comment to top of README.md
