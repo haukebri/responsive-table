@@ -31,4 +31,6 @@ Take a look at the demo.
 
 **Preact:** A lightweight `ResponsiveTable` component using Preact with htm tagged templates (no JSX transpilation needed). Uses ES module imports via import maps — no build step required. See `demo/preact/`.
 
+**Stimulus:** A Stimulus controller that enhances a standard HTML table with mobile-responsive labels. Uses the HTML-first approach — write your table in plain HTML, add `data-controller="responsive-table"`, and the controller injects `mobile-th` spans on connect. Loads Stimulus from CDN via import maps — no build step required. See `demo/stimulus/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
