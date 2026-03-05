@@ -27,4 +27,6 @@ Take a look at the demo.
 
 **Lit:** A `<responsive-table>` web component built with Lit. Uses standard custom elements with reactive properties (`headers`, `rows`). Shadow DOM is disabled so shared CSS applies directly. The demo loads Lit from CDN via import maps — no build step required. See `demo/lit/`.
 
+**Solid.js:** A `ResponsiveTable` component using Solid.js with fine-grained reactivity and JSX. Uses `<For>` for efficient list rendering. The demo loads Solid.js from CDN via import maps and compiles JSX in the browser with babel-preset-solid — no build step required. See `demo/solid/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
