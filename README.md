@@ -29,4 +29,6 @@ Take a look at the demo.
 
 **Solid.js:** A `ResponsiveTable` component using Solid.js with fine-grained reactivity and JSX. Uses `<For>` for efficient list rendering. The demo loads Solid.js from CDN via import maps and compiles JSX in the browser with babel-preset-solid — no build step required. See `demo/solid/`.
 
+**Preact:** A lightweight `ResponsiveTable` component using Preact with htm tagged templates (no JSX transpilation needed). Uses ES module imports via import maps — no build step required. See `demo/preact/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
