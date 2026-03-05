@@ -31,4 +31,6 @@ Take a look at the demo.
 
 **Preact:** A lightweight `ResponsiveTable` component using Preact with htm tagged templates (no JSX transpilation needed). Uses ES module imports via import maps — no build step required. See `demo/preact/`.
 
+**Mithril.js:** A `ResponsiveTable` component using Mithril.js with hyperscript views (`m()` calls instead of JSX or templates). Lightweight (~10kb gzipped), fast virtual DOM, and no build step required — loaded via CDN script tag. See `demo/mithril/`.
+
 **CSS:** On a defined screensize the <td>'s will expand to 100% width and <thead> will disappear. You might want to change styles here and there.
