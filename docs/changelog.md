@@ -1,5 +1,15 @@
 # Changelog
 
+## other-js-libs-mmcwof9j
+
+- Added Preact demo (`demo/preact/index.html`) using htm tagged templates, no JSX transpilation
+- Updated README with Preact section
+
+## other-js-libs-mmcvjeit
+
+- Added Solid.js demo (`demo/solid/ResponsiveTable.jsx`, `demo/solid/index.html`)
+- Updated README with Solid.js section
+
 ## other-js-libs-mmcugtkv
 
 - Added Lit web component demo (`demo/lit/ResponsiveTable.js`, `demo/lit/index.html`)
